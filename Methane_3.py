@@ -335,6 +335,7 @@ def ParamsFromGauss(xvar, yvar, BinWeights, Skip, Test, STRfile, qaCheck = False
   y = a0*np.exp(-1/2*(xvar-mu0)**2/(sigma**2))
   fit = np.polyfit(xvar, y, 3)
   
+  
 #  ok.res <- nlsResiduals(test_nls)
 #  #plot(ok.res)
 #  test.nlsResiduals(ok.res)
