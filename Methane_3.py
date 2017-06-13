@@ -1,4 +1,5 @@
 #packages and libraries
+import rpy2.robjects as psigmas
 import pylab
 import pandas as pd
 import numpy as np
@@ -642,6 +643,6 @@ results["CH4RateTurbCmaxbin"] = CH4RateTurbCmaxbin/(19.2)*3600.
 print(sensorHt)
 results.to_csv('outfile.csv')  
                  
-import rpy2.robjects as psigmas
+
 psigmas.r['load']("pgsigma.RData")
 
